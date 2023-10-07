@@ -1,7 +1,10 @@
 import streamlit as st
 
-class Github:
-    def __init__(self,url:str):
+class CodeSpace:
+    def __init__(self,codespace_url:str, githubdev_url:str):
+        codespace_link = codespace_url
+        githubdev_link = githubdev_url
+        
         st.write("### Github Codespace")
 
         quickstart = "?quickstart=1" if st.checkbox(

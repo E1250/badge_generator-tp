@@ -1,7 +1,7 @@
 import streamlit as st
-
 class Binder:
-    def __init__():
+    def __init__(self , url:str,file_name:str):
+        binder_link = url
         st.write("### Binder")
         
         option_color = st.selectbox("Select Color : ", options=['579ACA', 'E66581', 'F5A252', "%7Boption_color%7D"], format_func=lambda option: {
@@ -20,5 +20,3 @@ class Binder:
         st.code(binder_markdown)
 
         st.markdown(binder_markdown)
-    def _prepare_url(self,url):
-        pass
